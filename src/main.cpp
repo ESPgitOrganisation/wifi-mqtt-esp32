@@ -9,6 +9,8 @@
 #define MQTT_PORT     1883
 
 #define LED_PIN       2
+#define MQTT_USER "npesp"
+#define MQTT_PASSWORD "esptest"
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -92,7 +94,7 @@ void reconnect()
     // Attempt to connect
     // creat unique client ID
     // in Mosquitto broker enable anom. access
-    if (client.connect("ESP8266Client"))
+    if (client.connect("ESP32Client", MQTT_USER, MQTT_PASSWORD))
     {
       Serial.println("connected");
       // Subscribe
