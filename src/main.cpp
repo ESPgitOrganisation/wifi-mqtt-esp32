@@ -4,7 +4,8 @@
 #define SSID          "IB3"
 #define PWD           "ingenieursbeleving3"
 
-#define MQTT_SERVER   "10.128.48.25"
+#define MQTT_SERVER   "192.168.0.190" 
+// test
 #define MQTT_PORT     1883
 
 #define LED_PIN       2
